@@ -2,6 +2,7 @@ class CreatePrices < ActiveRecord::Migration[5.1]
   def change
     create_table :prices do |t|
       t.float :value
+      t.date :reference
       t.references :car, index: true
 
       t.timestamps null: false

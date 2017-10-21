@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 20171020115116) do
 
   create_table "prices", force: :cascade do |t|
     t.float "value"
+    t.date "reference"
     t.integer "car_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
