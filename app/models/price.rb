@@ -1,4 +1,3 @@
 class Price < ApplicationRecord
-  belongs_to :version
-  belongs_to :reference_table
+  belongs_to :car
 end

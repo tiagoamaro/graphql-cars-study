@@ -1,2 +1,0 @@
-class ReferenceTable < ApplicationRecord
-end

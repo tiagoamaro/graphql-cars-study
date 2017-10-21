@@ -28,26 +28,10 @@ ActiveRecord::Schema.define(version: 20171020115116) do
 
   create_table "prices", force: :cascade do |t|
     t.float "value"
-    t.integer "version_id"
-    t.integer "reference_table_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["reference_table_id"], name: "index_prices_on_reference_table_id"
-    t.index ["version_id"], name: "index_prices_on_version_id"
-  end
-
-  create_table "reference_tables", force: :cascade do |t|
-    t.date "date"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "versions", force: :cascade do |t|
-    t.string "name"
     t.integer "car_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["car_id"], name: "index_versions_on_car_id"
+    t.index ["car_id"], name: "index_prices_on_car_id"
   end
 
 end
