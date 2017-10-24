@@ -26,6 +26,7 @@ gem 'puma', '~> 3.7'
 # gem 'rack-cors'
 
 gem 'graphql'
+gem 'kaminari'
 
 group :development, :test do
   gem 'pry'
