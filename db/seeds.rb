@@ -20,9 +20,16 @@ Price.create(car: palio, reference: Date.parse('January 2014'), value: 24430)
 Price.create(car: palio, reference: Date.parse('October 2013'), value: 22210)
 Price.create(car: palio, reference: Date.parse('March 2013'), value: 24210)
 
+# # # Random Palio prices, for the sake of pagination example
+(10_000..100_000).step(100).each do |price|
+  random_date = rand Date.parse('October 2013')..Date.parse('October 2017')
+  Price.create(car: palio, reference: random_date, value: price)
+end
+
 # # Etios prices
 Price.create(car: etios, reference: Date.parse('January 2017'), value: 47188)
 Price.create(car: etios, reference: Date.parse('October 2016'), value: 45120)
 Price.create(car: etios, reference: Date.parse('March 2016'), value: 43112)
 Price.create(car: etios, reference: Date.parse('June 2015'), value: 41330)
 Price.create(car: etios, reference: Date.parse('January 2015'), value: 39410)
+
