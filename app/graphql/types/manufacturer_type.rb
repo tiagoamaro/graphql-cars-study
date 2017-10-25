@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 module Types
   ManufacturerType = GraphQL::ObjectType.define do
     name 'Manufacturer'

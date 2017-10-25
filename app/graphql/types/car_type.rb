@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 module Types
   CarType = GraphQL::ObjectType.define do
     name 'Car'
