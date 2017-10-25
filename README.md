@@ -1,24 +1,25 @@
-# README
+# https://github.com/tiagoamaro/graphql-cars-study
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This repository contains a sample Rails 5.1 API app working with the `graphql` gem. It's a study app, with a very simple structure.
 
-Things you may want to cover:
+If you want to check out a more complete example, please visit Tiwari's awesome example at https://github.com/gauravtiwari/relay-rails-blog
 
-* Ruby version
+In this example, I tried to tackle the following questions I had before meeting GraphQL:
 
-* System dependencies
+## Done
 
-* Configuration
+- [x] How to setup `graphql` + Rails API
+- [x] URLs to interact with it (routing)
+- [x] Setup schema
+- [x] GraphQL Controllers
+- [x] Model associations
+- [x] Pagination
 
-* Database creation
+## Incomplete
 
-* Database initialization
+If you want to check out how to do the following items, check out Tiwari's example at https://github.com/gauravtiwari/relay-rails-blog
 
-* How to run the test suite
+- [ ] How to setup mutation?
+- [ ] Authorization
+- [ ] N+1 queries
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
